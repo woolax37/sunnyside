@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+label[for],
+button,
+input[type="submit"],
+select {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+/* .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px)
+    height: 1px
+} */

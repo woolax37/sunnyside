@@ -1,0 +1,70 @@
+.main-header {
+  background-color: lightblue;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu {
+    display: none;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.social-list {
+  display: flex;
+}
+
+.testimonial-item {
+  display: grid;
+}
+
+.testimonial-name,
+.testimonial-role {
+  order: 1;
+}
+
+.skill {
+  display: grid;
+  align-items: end;
+}
+
+.skill > * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+@media screen and (min-width: 768px) {
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+  .toggle-menu {
+    display: none;
+  }
+
+  .main-nav .menu {
+    display: flex;
+  }
+  .experience:nth-child(odd) .experience-content {
+    order: -1;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} ;
